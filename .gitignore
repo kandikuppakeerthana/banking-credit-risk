@@ -17,13 +17,14 @@ __pycache__/
 
 # Datasets
 *.csv
-*.xlsx
-*.xls
-*.parquet
+!data/*.csv
+!notebooks/*.csv
 
 # Trained models
 *.pkl
 *.joblib
+!models/*.pkl
+!notebooks/*.pkl
 
 # IDE
 .vscode/
