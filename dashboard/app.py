@@ -454,9 +454,8 @@ elif page == "🔮 Credit Risk Prediction":
             }
 
             try:
-
                 response = requests.post(
-                    "http://127.0.0.1:8000/predict",
+    "https://banking-credit-risk-api.onrender.com/predict",
                     json=customer_data,
                     timeout=30
                 )
@@ -557,7 +556,7 @@ elif page == "🔮 Credit Risk Prediction":
 
                 st.info(
                     "Make sure FastAPI is running on "
-                    "http://127.0.0.1:8000"
+                    "https://banking-credit-risk-api.onrender.com"
                 )
 
             except requests.exceptions.Timeout:
